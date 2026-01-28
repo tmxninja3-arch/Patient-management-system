@@ -1,0 +1,110 @@
+/* ========================================
+   Patient Management System Styles
+   ======================================== */
+
+/* Body Styling */
+body {
+    background-color: #f8f9fa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Card Styling */
+.card {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: none;
+    border-radius: 10px;
+}
+
+.card-header {
+    background: linear-gradient(135deg, #007bff, #0056b3);
+    color: white;
+    border-radius: 10px 10px 0 0 !important;
+    font-weight: 600;
+}
+
+/* Table Styling */
+.table {
+    margin-bottom: 0;
+}
+
+.table thead th {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    font-weight: 500;
+}
+
+.table tbody tr:hover {
+    background-color: #f1f3f4;
+}
+
+/* Button Styling */
+.btn-action {
+    padding: 5px 10px;
+    font-size: 14px;
+    margin: 2px;
+}
+
+/* Form Styling */
+.form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+/* Alert Styling */
+.alert {
+    border-radius: 8px;
+    border: none;
+}
+
+/* Pagination Styling */
+.pagination .page-link {
+    color: #007bff;
+}
+
+.pagination .page-item.active .page-link {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+/* Gender Badge Colors */
+.badge-male {
+    background-color: #17a2b8;
+}
+
+.badge-female {
+    background-color: #e83e8c;
+}
+
+.badge-other {
+    background-color: #6c757d;
+}
+
+/* Search Box */
+.search-box {
+    max-width: 400px;
+}
+
+/* Navbar Brand */
+.navbar-brand i {
+    font-size: 1.5rem;
+}
+
+/* Footer */
+.footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* No Records Message */
+.no-records {
+    text-align: center;
+    padding: 40px;
+    color: #6c757d;
+}
+
+.no-records i {
+    font-size: 4rem;
+    margin-bottom: 15px;
+}
