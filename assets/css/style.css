@@ -16,7 +16,7 @@ body {
 }
 
 .card-header {
-    background: linear-gradient(135deg, #007bff, #0056b3);
+    background: linear-gradient(135deg,  #2ec2fc, #0056b3);
     color: white;
     border-radius: 10px 10px 0 0 !important;
     font-weight: 600;
@@ -28,7 +28,7 @@ body {
 }
 
 .table thead th {
-    background-color: #007bff;
+    background-color: #2ec2fc;
     color: white;
     border: none;
     font-weight: 500;

@@ -60,7 +60,7 @@ $msg_type = isset($_GET['type']) ? $_GET['type'] : '';
 <!-- Page Header -->
 <div class="d-flex justify-content-between align-items-center mb-4">
     <h2><i class="bi bi-people"></i> Patient List</h2>
-    <a href="create.php" class="btn btn-primary">
+    <a href="create.php" class="btn btn-success">
         <i class="bi bi-person-plus"></i> Add New Patient
     </a>
 </div>

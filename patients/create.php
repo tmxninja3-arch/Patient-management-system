@@ -34,9 +34,21 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Validate Email
     if (empty($email)) {
         $errors[] = "Email is required";
-    } else (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+    } elseif (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
         $errors[] = "Invalid email format";
-    } 
+    } else {
+        // Check if email already exists
+        $checkEmail = "SELECT id FROM patients WHERE email = ?";
+        $stmt = mysqli_prepare($conn, $checkEmail);
+        mysqli_stmt_bind_param($stmt, "s", $email);
+        mysqli_stmt_execute($stmt);
+        mysqli_stmt_store_result($stmt);
+        
+        if (mysqli_stmt_num_rows($stmt) > 0) {
+            $errors[] = "Email already exists";
+        }
+        mysqli_stmt_close($stmt);
+    }
     
     // Validate Phone
     if (empty($phone)) {
