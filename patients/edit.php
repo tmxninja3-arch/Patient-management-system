@@ -10,7 +10,7 @@ if (!isset($_GET['id']) || empty($_GET['id'])) {
     exit();
 }
 
-$id = (int)$_GET['id'];
+$id = (int)$_GET['id'];   // Convert to integer for security
 
 // Fetch doctors for dropdown
 $doctorQuery = "SELECT id, doctor_name, specialization FROM doctors ORDER BY doctor_name";

@@ -182,7 +182,7 @@ include '../includes/header.php';
                         <div class="col-md-6 mb-3">
                             <label class="form-label">Assign Doctor</label>
                             <select name="doctor_id" class="form-select">
-                                <option value="">Select Doctor (Optional)</option>
+                                <option value="">Select Doctor</option>
                                 <?php 
                                 mysqli_data_seek($doctorResult, 0);
                                 while ($doctor = mysqli_fetch_assoc($doctorResult)): 
